@@ -52,6 +52,9 @@ class Motor
 	//set the chip to standby mode.  The drive function takes it out of standby 
 	//(forward, back, left, and right all call drive)
 	void standby();	
+
+    // change the offset of the motor
+    void changeOffset(int offset);
 	
   private:
     //variables for the 2 inputs, PWM input, Offset value, and the Standby pin
